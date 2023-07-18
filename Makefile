@@ -5,9 +5,17 @@
 	saugns -r192000 $< -o- | sox - -r48000 -C -3.01 $@
 
 all: 
-	@for f in *.sau; do \
-		make -s "$${f%.sau}.mp3"; \
+	@for d in *; do \
+		if [ -d $$d ] && [ -n "`ls $$d`" ]; then \
+			for f in $$d/*.sau; do \
+				make -s "$${f%.sau}.mp3"; \
+			done; \
+		fi; \
 	done
 
 check:
-	saugns -c *.sau
+	@for d in *; do \
+		if [ -d $$d ] && [ -n "`ls $$d`" ]; then \
+			saugns -c $$d/*.sau; \
+		fi; \
+	done
