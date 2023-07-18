@@ -1,0 +1,7 @@
+'bpm=240*2
+'strength=25*2*2
+Whsi f$bpm/120 p[
+        Rxpe mg a$strength*(120/$bpm)
+] a1[
+   //     Rlin mf
+] t30

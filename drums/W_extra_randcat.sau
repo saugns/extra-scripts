@@ -1,0 +1,12 @@
+'bpm=280
+'strength=20
+Wcat f0[
+	Wsaw f$bpm/360 a$strength*2
+	Wspa f$bpm/480 a-$strength*2
+] p[
+        Rxpe mf f$bpm/120 a$strength*(240/$bpm)/2.r$strength*(240/$bpm)[
+		Rcos mf p1/2
+	]
+] a1/8.r1[
+        Rcub mf f$bpm/120*2
+] t30

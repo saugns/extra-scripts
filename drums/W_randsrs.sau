@@ -1,0 +1,12 @@
+'bpm=150*2
+'strength=30
+Wsrs f0[
+        Wsaw f$bpm/240 a$strength
+        Weto f$bpm/240 a-$strength p1/2
+] p[
+        Rxpe mvb f$bpm/120 a$strength*(240/$bpm)/2.r$strength*(240/$bpm)[
+                Wean p3/4
+        ]
+] a1/6.r1[
+        Rsqe mf f$bpm/120
+] t30

@@ -1,0 +1,12 @@
+'bpm=280
+'strength=30
+Wcat f0[
+	Wsaw f$bpm/240 a$strength
+	Weto f$bpm/240 a$strength p1/2
+] p[
+        Rxpe mvb f$bpm/120 a$strength*(240/$bpm)/2.r$strength*(240/$bpm)[
+                Rcos mf p1/2
+        ]
+] a1/8.r1[
+	Rsqe mf f$bpm/120
+] t30
