@@ -1,0 +1,18 @@
+// The 'bpm' is the maximum pace, rather than an accurate average.
+// The carrier frequency makes the background when beats are weak.
+'bpm=480/2//*(3/2)
+'strength=100/4//*(1/2*3/5)
+/*Rsah mt*/ Wean f$strength/3 p[
+//	Rxpe /*mv*/ mt f$bpm/120 a$strength*(240/$bpm)/2
+	Rxpe mf f$bpm/120 a$strength*(240/$bpm)
+] a0{g3/4 t10}.r1[
+	Rsqe mf f$bpm/120
+] t30*6
+
+
+#Q
+/*Rsah mt*/ Wssr f$strength/3 p[
+	Rxpe /*mv*/ mg f$bpm/120 a$strength*(240/$bpm)
+] a1/2.r1[
+	Rcub mf f$bpm/120*2
+] t30

@@ -1,0 +1,7 @@
+Wsin f0[
+	Wsin p1/3 f44{g440*pi llog}[
+		Wsin f2{g5} a0{g25 llge} t2
+		; a{g0}
+	] a10^met(3) t2
+	; f{g44}
+]
