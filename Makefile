@@ -12,7 +12,7 @@ SRATE    = 48000
 	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C -3.01 $@
 .sau.ogg:
 	@echo $@; \
-	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C 6 $@
+	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C 5.8 $@
 
 all: 
 	@for d in *; do \

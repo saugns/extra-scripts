@@ -20,7 +20,7 @@ files instead. The default format selection is `mp3`. Supported formats:
  * Au, `.au`.
  * FLAC, `.flac`.
  * MP3, `.mp3`. Uses LAME VBR compression level 3 (0 is highest quality).
- * Ogg Vorbis, `.ogg`. Uses quality level 6.
+ * Ogg Vorbis, `.ogg`. Uses quality level 5.8.
  * WAV, `.wav`.
 
 Alternatively, if you have a `filename.sau` in the *main* directory, then
