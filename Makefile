@@ -2,7 +2,7 @@
 .SUFFIXES: .sau .wav .au .flac .mp3
 FMT      = mp3
 SRATE_TMP=192000 # higher than SRATE for oversampling, e.g. 4x for high quality
-SRATE    = 48000 # for CD quality use 44100 but 48000 best fits most soundcards
+SRATE    = 48000
 
 .sau.mp3:
 	@echo $@; \
@@ -28,10 +28,6 @@ check:
 	done
 
 clean:
-	@if [ $(FMT) != "sau" ] && [ -n "`ls */*.$(FMT)`" ]; then \
-		echo "Remove all .$(FMT) files?"; \
-		read CONFIRM; \
-		if [ "$$CONFIRM" = "y" ] || [ "$$CONFIRM" = "Y" ]; then \
-			rm -f */*.$(FMT); \
-		fi; \
+	@if [ $(FMT) != "sau" ]; then \
+		rm -f */*.$(FMT); \
 	fi
