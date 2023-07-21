@@ -1,15 +1,18 @@
 .SILENT:
-.SUFFIXES: .sau .wav .au .flac .mp3
+.SUFFIXES: .sau .au .flac .wav .mp3 .ogg
 FMT      = mp3
 SRATE_TMP=192000 # higher than SRATE for oversampling, e.g. 4x for high quality
 SRATE    = 48000
 
+.sau.au .sau.flac .sau.wav:
+	@echo $@; \
+	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) $@
 .sau.mp3:
 	@echo $@; \
 	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C -3.01 $@
-.sau.wav .sau.au .sau.flac:
+.sau.ogg:
 	@echo $@; \
-	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) $@
+	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C 6 $@
 
 all: 
 	@for d in *; do \
