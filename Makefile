@@ -7,18 +7,20 @@ DIRS     = *
 FMT      = mp3
 SRATE_TMP=192000 # higher than SRATE for oversampling, e.g. 4x for high quality
 SRATE    = 48000
+SAUGNS   = saugns
+SOX      = sox
 
 .sau.au .sau.flac .sau.wav:
 	@echo $@; \
-	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) $@
+	$(SAUGNS) -r$(SRATE_TMP) $< -o- | $(SOX) - -r$(SRATE) $@
 .sau.mp3:
 	@echo $@; \
-	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C -3.01 $@
+	$(SAUGNS) -r$(SRATE_TMP) $< -o- | $(SOX) - -r$(SRATE) -C -3.01 $@
 .sau.ogg:
 	@echo $@; \
-	saugns -r$(SRATE_TMP) $< -o- | sox - -r$(SRATE) -C 5.8 $@
+	$(SAUGNS) -r$(SRATE_TMP) $< -o- | $(SOX) - -r$(SRATE) -C 5.8 $@
 
-all: 
+all:
 	@for d in $(DIRS); do \
 		if [ -d $$d ] && [ -n "`ls $$d`" ]; then \
 			for f in $$d/*.sau; do \
