@@ -1,3 +1,6 @@
+# Copyright (c) 2023 Joel K. Pettersson <joelkp@tuta.io>
+#
+# This file can be freely copied, modified, distributed. It has no warranty.
 .SILENT:
 .SUFFIXES: .sau .au .flac .wav .mp3 .ogg
 DIRS     = *
