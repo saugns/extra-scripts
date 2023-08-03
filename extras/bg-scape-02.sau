@@ -1,0 +1,2 @@
+// Mellow ambient track with random non-repeating "melody"
+Rlin f3 t60 p[Wtri r8.r32[Ruwh f1] a2]
