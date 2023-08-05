@@ -1,0 +1,26 @@
+/*
+ * Variations on IXA synthesis using other wavetypes to set it apart from
+ * plain PM than triangle wave. Each variation uses one mellow wave type.
+ */
+
+Wtri f100 p[
+	Wsin a-1/2.r+1/2[Wsqr p(1/4)]
+	Wtri a+1/2.r-1/2[Wsqr p(1/4)]
+	Wsin r1 a0 a{g5 t3}
+] t3
+
+| /1
+
+Wspa f100 p[
+	Wsin a-1/2.r+1/2[Wsqr p(1/4)]
+	Wspa a+1/2.r-1/2[Wsqr p(1/4)]
+	Wsin r1 a0 a{g5 t3}
+] t3
+
+| /1
+
+Whsi f100 p[
+	Wsin a-1/2.r+1/2[Wsqr p(1/4)]
+	Whsi a+1/2.r-1/2[Wsqr p(1/4)]
+	Wsin r1 a0 a{g5 t3}
+] t3
