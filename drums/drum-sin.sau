@@ -5,3 +5,7 @@ Wsin f$bpm/120 p[
 ] a1/8.r1[
         Rlin mf r2
 ] t30
+
+// alternatively:
+// ] a0[
+//         Rlin mf
