@@ -1,4 +1,4 @@
 Wsin f0[
-	Wsin p1/3 f44{g440*pi llog} a10^met(3) t2
-	; f{g44}
+	Wsin p1/3 f44[g440*pi llog] a10^met(3) t2
+	; f[g44]
 ]

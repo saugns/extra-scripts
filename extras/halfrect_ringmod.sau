@@ -1,14 +1,14 @@
-'c Whsi a1['a Wsin r1/2 a0{g1 t2}] t2; a{g0 t2}; t1/2 | @a a{g0 t1} @c t1
+'c Whsi a1['a Wsin r1/2 a0[g1 t2]] t2; a[g0 t2]; t1/2 | @a a[g0 t1] @c t1
 
 |/1/2
 Whsi a0[
-	Wsin r1/2 a1{g0}; a1{g0}; a1{g0}; // "Soft square-wave" beeps
-	a{g1 t1/2} r0{g2 t3} t3
+	Wsin r1/2 a1[g0]; a1[g0]; a1[g0]; // "Soft square-wave" beeps
+	a[g1 t1/2] r0[g2 t3] t3
 ]
 |/1/2
 
 // Nest inside PM
 Wsin p[
-	Whsi r0{g100/1 lexp} a0[Wsin r1/2] t2; r{g0};
-	r0{g1/2 llog} t1; r{g0}
+	Whsi r0[g100/1 lexp] a0[Wsin r1/2] t2; r[g0];
+	r0[g1/2 llog] t1; r[g0]
 ]

@@ -5,7 +5,7 @@
 /*Rsah mt*/ Wean f$strength/3 p[
 //	Rxpe /*mv*/ mt f$bpm/120 a$strength*(240/$bpm)/2
 	Rxpe mf f$bpm/120 a$strength*(240/$bpm)
-] a0{g3/4 t10}.r1[
+] a0[g3/4 t10].r1[
 	Rsqe mf f$bpm/120
 ] t30
 
