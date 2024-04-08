@@ -1,5 +1,5 @@
-'bpm=280
-'strength=30
+$bpm=280
+$strength=30
 Wcat f0[
         Wsaw f$bpm/240 a$strength*2
 ] p[

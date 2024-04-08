@@ -1,7 +1,7 @@
 // The 'bpm' is the maximum pace, rather than an accurate average.
 // The carrier frequency makes the background when beats are weak.
-'bpm=360
-'strength=125*2
+$bpm=360
+$strength=125*2
 Rcos mt f$strength*(2/7) pseed(0)[
 //	Wsin a200 f$bpm/120
 	Rxpe mt f$bpm/120 a$strength*(240/$bpm)

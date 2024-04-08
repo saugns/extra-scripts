@@ -1,8 +1,8 @@
 // Amplitude shaping creates "ducking" sound, for drum pairs.
 // Innermost modulator varies frequency of the two sub-beats.
 // The 'saw' & 'eto' LFOs extend rhythm and sound a bit more.
-'bpm=150*2
-'strength=30
+$bpm=150*2
+$strength=30
 Wean f0 p[
 	Rxpe mf f$bpm/120 a$strength*(240/$bpm)/2.r$strength*(240/$bpm)[
 		Rsqe mf p1/4

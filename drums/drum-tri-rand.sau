@@ -1,5 +1,5 @@
-'bpm=150*2
-'strength=30
+$bpm=150*2
+$strength=30
 Wtri f0[
         Wsaw f$bpm/240 a$strength
         Weto f$bpm/240 a-$strength p1/2

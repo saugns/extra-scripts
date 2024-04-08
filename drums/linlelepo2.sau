@@ -1,5 +1,5 @@
-'bpm=280//240
-'strength=30*1.5
+$bpm=280//240
+$strength=30*1.5
 Wtri f$bpm/120 p[
 	Wsin a$strength/5*(120/$bpm)
         Rxpe mf a$strength*(120/$bpm)

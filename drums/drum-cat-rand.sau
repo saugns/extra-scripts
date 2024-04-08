@@ -1,5 +1,5 @@
-'bpm=480
-'strength=60
+$bpm=480
+$strength=60
 Wcat f$strength/3 p[
         Rxpe mvb f$bpm/120 a$strength*(240/$bpm)/2
 ] a1/8.r1[
