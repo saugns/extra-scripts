@@ -1,6 +1,10 @@
 Extra scripts and SAU audio rendering Makefile
 ==============================================
 
+**Moved [to Codeberg](https://codeberg.org/sau/extra-scripts).
+Will no longer be updated.**
+
+
 The Makefile in this directory tests first-level subdirectories for
 any `.sau` files, and on `make` makes an `.mp3` for each new or updated
 file using `saugns` and `sox`. Other output formats and file selections
